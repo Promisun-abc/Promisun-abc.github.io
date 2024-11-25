@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小小的家（首页）</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+    }  /*样式初始化*/
+    .main{
+        width: 1000px;
+        margin: auto;/*让网页只有1000宽，居中*/
+    }
+    .header,.nav,.container,.footer{
+        float: left;
+        width: 100%;
+        /*内边距影响盒子实际大小，以下box-sizing进行处理*/
+        box-sizing: border-box;
+    }
+    .header{
+        background :#ccc;
+        padding: 20px;
+        text-align: center;
+    }
+    .header img{
+        width: 80px;
+        height: 80px;
+        transition: 0.5s;/*动画过渡0.5s*/
+    /*!!!!overflow: hidden;有问题!!!!*/
+    }
+    .header img:hover{
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+    .nav{
+        background:#333;
+    }
+    .nav a{
+        color:#fff;
+        padding: 10px 20px;
+        display: inline-block;/*链接以块的形式展示*/
+        margin-left: 55px;
+    }
+    .nav a:hover{ /*鼠标悬停呈现状态*/
+        background: #bbb;
+        color: #000;
+    }
+    .lside{
+        width: 200px;
+        height: 200px;
+        float: left;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+    }
+    .rside{
+        width: 200px;
+        height: 200px;
+        float: right;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+    }
+    .content{
+        margin:0px 205px;
+    }
+    .lside,.rside,.content{
+        padding: 5px;
+        box-sizing: border-box;/*去除内边距影响*/
+    }
+    .footer{
+        padding: 10px;
+        background: #ccc;
+        text-align: center;
+    }
+    /*浏览度小于700时，三个行竖行排列*/
+    @media screen and (max-width:700px){
+        .lside,.rside,.content{
+        width: 100%;
+        margin: 0px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Promisun</h1><hr><br>
+            <img src="images\1.jpg" >
+        </div>
+        <div class="nav">
+            <a href="..\qinshiweb.html">返回寝室</a>
+            <a href="index.html">首页</a>
+            <a href="web\Z1-page.html">个人简介</a>
+            <a href="web\Z2-page.html">动画作品</a>
+            <a href="web\Z3-page.html">我的相册</a>
+            <a href="web\Z4-page.html">读书摘抄</a>
+        </div>
+        <div class="container">
+            <div class="lside">
+                <br><br>
+                <h2 style="font-family: Arial, Helvetica, sans-serif;font-style: italic;">写信给我:</h2><br>
+                <p style="font-family: Arial, Helvetica, sans-serif;font-style: italic;color: rgba(223, 13, 111, 0.557);font-size: large;">
+                    please e-mail me at <br> 161447118@qq.com
+                </p><br><br><br>
+            </div>
+            <div class="rside">
+                <br><br>
+                <h2 style="font-family: Arial, Helvetica, sans-serif;font-style: italic;">座右铭:</h2><br>
+                <p style="font-size: larger;font-style:bold;color: rgba(223, 13, 111, 0.557);">
+                    道阻且长，<br>
+                    行则将至。
+                </p><br><br>
+            </div>
+            <div class="content">
+                <h2>欢迎参观</h2><br>
+                <p style="font-size: x-large;color:rosybrown;font-weight: bold;margin: auto;">
+                   &nbsp;&nbsp; 有朋自远方来，<br><br>
+                   &nbsp;&nbsp; 不亦乐乎！
+                </p> <br>
+                <p style="font-size: medium;color:rgba(74, 35, 35, 0.596);font-weight: bold;">
+                    &nbsp;&nbsp;--Here is promisun's space
+                </p>
+            </div>
+        <div class="footer">
+            <p >版权声明 更新时间：2024年11月15日 星期五 Copyright © promisun所有</p>
+        </div>
+    </div>
+</body>
+</html>
