@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简介</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+    }  /*样式初始化*/
+    .main{
+        width: 1000px;
+        margin: auto;/*让网页只有1000宽，居中*/
+    }
+    .header,.nav,.container,.footer{
+        float: left;
+        width: 100%;
+        /*内边距影响盒子实际大小，以下box-sizing进行处理*/
+        box-sizing: border-box;
+    }
+    .header{
+        background :#ccc;
+        padding: 20px;
+        text-align: center;
+    }
+    .header img{
+        width: 80px;
+        height: 80px;
+        transition: 0.5s;/*动画过渡0.5s*/
+    /*!!!!overflow: hidden;有问题!!!!*/
+    }
+    .header img:hover{
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+    .nav{
+        background:#333;
+    }
+    .nav a{
+        color:#fff;
+        padding: 10px 20px;
+        display: inline-block;/*链接以块的形式展示*/
+        margin-left: 55px;
+    }
+    .nav a:hover{ /*鼠标悬停呈现状态*/
+        background: #bbb;
+        color: #000;
+    }
+    .footer{
+        padding: 10px;
+        background: #ccc;
+        text-align: center;
+    }
+    .ysa{
+        height: 300px;
+        font-style: italic;
+        font-size: larger;
+        font-weight: 100;
+    }
+    .ysb{
+        height: 300px;
+        font-style: italic;
+        font-size: larger;
+        font-weight: 100;
+    }
+    .ysc{
+        height: 300px;
+        font-style: italic;
+        font-size: larger;
+        font-weight: 100;
+    }
+    .ysa img{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Promisun</h1><hr><br>
+            <img src="..\images\1.jpg" >
+        </div>
+        <div class="nav">
+            <a href="..\..\qinshiweb.html">返回寝室</a>
+            <a href="index.html">首页</a>
+            <a href="Z1-page.html">个人简介</a>
+            <a href="Z2-page.html">动画作品</a>
+            <a href="Z3-page.html">我的相册</a>
+            <a href="Z4-page.html">读书摘抄</a>
+        </div>
+        <div class="container">
+            <div class="ysa">
+                <h1 style="color:blue;text-align: center">个人概况</h1><br>
+                <img src="../images/6.jpg" > 
+                <p >姓名：许阳 &nbsp;&nbsp;&nbsp;&nbsp;性别：男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;政治面貌：共青团员</p><br>
+                <p >出生年月： 2006年4月 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专业： 计算机类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+                <p>最高学历： 本科</p><br>
+                <p>家乡：湖南常德</p>
+            </div>
+
+            <div class="ysb">
+                <h1 style="color:blue;text-align: center">兴趣爱好</h1>
+                <p>1.乒乓球，气排球</p><br>
+                <p>2.看经典电影（偏向恐怖悬疑，反映社会现实，动漫...类型）</p><br>
+                <p>3.感受游戏魅力（游戏亦是艺术，如底特律：变人、双人成行、动物井...）</p><br>
+                <p>4.旅游，体验不同的风俗文化</p><br>
+            </div>
+
+            <div class="ysc">
+                <h1 style="color:blue;text-align: center">个人希望培养起来的能力</h1><br>
+                <p>1.自我学习钻研的能力</p><br>
+                <p>2.走出舒适圈，勇于挑战自我的能力</p><br>
+                <p>3.合作交流，能明细规划的能力</p><br>
+                <p>4.积极调整心态，与生活自洽的能力</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <p>版权声明 更新时间：2024年11月15日 星期五 Copyright © promisun所有</p>
+        </div>
+    </div>
+</body>
+</html>
